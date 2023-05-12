@@ -1,0 +1,14 @@
+name: github-actions-demo
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: wersja-pythona
+        run: python --version
+
+      - name: pylint
+        run: pylint app.py
